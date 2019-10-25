@@ -52,7 +52,6 @@
       <![endif]-->  
     <!-- These tell you to use a different browser if your current one is incompatible -->
     
-    
     <!-- Add your site or application content here -->
     <p>Hello world! This is HTML5 Boilerplate.</p> 
     <!-- Paragraph tag to indicate a paragraph with the content being displayed afterward -->
@@ -71,11 +70,24 @@
 
     <script src="js/main.js"></script> 
     <!-- Location of where your Javascript would go -->
+    
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () 
+      { 
+        ga.q.push(arguments) 
+      }; 
+      ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); 
+      ga('set','transport','beacon'); 
+      ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async>
+    </script> 
+    <!-- Google Analytics code used to connect to Google and gather stats -->
 
   </body> 
   <!-- Tag that closes the body of the text  -->
-
-  
   
 </html> 
 <!-- Closes the html document -->
